@@ -1,11 +1,16 @@
 package com.manalangjames.app.services.map;
 
 import com.manalangjames.app.model.Owner;
-import com.manalangjames.app.services.CrudService;
+import com.manalangjames.app.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
+    }
 
     @Override
     public Set<Owner> findAll() {
