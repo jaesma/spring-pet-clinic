@@ -2,9 +2,11 @@ package com.manalangjames.app.services.map;
 
 import com.manalangjames.app.model.Pet;
 import com.manalangjames.app.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override

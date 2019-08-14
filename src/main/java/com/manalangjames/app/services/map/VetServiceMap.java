@@ -2,9 +2,11 @@ package com.manalangjames.app.services.map;
 
 import com.manalangjames.app.model.Vet;
 import com.manalangjames.app.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService{
 
     @Override
